@@ -1,0 +1,15 @@
+balance = 1000
+print("welcome to our atm")
+try:
+    answer = input("would you like to withdraw money ; yes/no")
+except TypeError:
+    print("you should only answer with yes or no")
+    
+if answer == "yes":
+    amount = int("how much oney would you like to get :")
+    balance = balance - amount
+    print(f"remained balance is{balance})")
+elif answer == "no":
+    print("thanks for using our atm")
+    
+    
