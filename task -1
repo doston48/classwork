@@ -1,15 +1,37 @@
-balance = 1000
-print("welcome to our atm")
-try:
-    answer = input("would you like to withdraw money ; yes/no")
-except TypeError:
-    print("you should only answer with yes or no")
+# balance = 1000
+# print("welcome to our atm")
+# try:
+#     answer = input("would you like to withdraw money ; yes/no")
+# except TypeError:
+#     print("you should only answer with yes or no")
     
-if answer == "yes":
-    amount = int("how much oney would you like to get :")
-    balance = balance - amount
-    print(f"remained balance is{balance})")
-elif answer == "no":
-    print("thanks for using our atm")
+# if answer == "yes":
+#     amount = int("how much oney would you like to get :")
+#     balance = balance - amount
+#     print(f"remained balance is{balance})")
+# elif answer == "no":
+#     print("thanks for using our atm")
     
     
+# groceries = ["milk", "bread","eggs","cheese","butter"]
+# item_to_buy = input("which product do you want to buy?")
+# if item_to_buy in groceries:
+#     groceries: 
+#   print(f"user bought{item_to_buy}")
+# else:
+#     print("not in the list")
+#     print("updated list:",groceries)
+
+
+groceries = ["milk", "bread","eggs","cheese","butter"]
+product = input ("which product would you want to buy? ") 
+if product in groceries:
+    groceries.remove(product)
+    product(f"user bought {product}")
+else:
+  print("not in the list.")
+
+print("update list",groceries)
+
+    
+ 
