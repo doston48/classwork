@@ -1,0 +1,13 @@
+price = 5
+age = int(input("enter you age :"))
+if age < 18:
+ discount = 5 * 50 / 100
+ price = 5 - discount
+ print(f"the price to you discount {price}")
+elif age > 60:   
+
+ discount = 5 * 50 / 100
+ price = 5 - discount
+ print(f"the finial price is:",price) 
+else:
+    print(f"no discount.the price to you is ${price}")
